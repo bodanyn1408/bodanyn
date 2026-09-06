@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1c4d9b">
+<title>NOE & NÉSTOR · 14.08.2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cyan:#42a9c1;--blue:#1d58a5;--deep:#162e72;--navy:#0b1b43;--paper:#f4f3ec;--white:#fff;--muted:#c9d5ef;--yellow:#e9dca0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--navy);font-family:'DM Sans',sans-serif}.cond{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase}a{text-decoration:none;color:inherit}
+/* visual language inspired by the invitation sleeve */
+.hero{min-height:100svh;position:relative;overflow:hidden;display:grid;place-items:center;color:#fff;background:linear-gradient(130deg,var(--cyan) 0%,#287eb5 37%,var(--blue) 67%,#293d9d 100%)}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.14),transparent 30%),radial-gradient(circle at 80% 80%,rgba(0,0,0,.18),transparent 40%);opacity:.9}.hero:after{content:"";position:absolute;inset:24px;border:2px solid rgba(7,25,63,.55);clip-path:polygon(2% 0,48% 0,50% 8%,52% 0,98% 0,100% 100%,52% 100%,50% 92%,48% 100%,2% 100%);pointer-events:none}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,transparent,black 30%,transparent)}
+.hero-content{position:relative;z-index:2;text-align:center;width:min(980px,92vw);padding:70px 20px}.catalogue{font-size:clamp(16px,2vw,25px);font-weight:700;letter-spacing:.05em;margin-bottom:34px}.catalogue span{opacity:.8;font-size:.72em}.cover-mark{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 18px;font:600 12px 'Barlow Condensed';letter-spacing:.18em;opacity:.8}.cover-mark span{width:48px;border-top:1px dashed rgba(255,255,255,.65)}.names{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:clamp(88px,17vw,210px);font-weight:800;line-height:.72;letter-spacing:-.04em;margin:0 auto;text-align:center;text-shadow:0 2px 0 rgba(0,0,0,.12);width:100%}.names span{display:block}.names .amp{font-size:.30em;line-height:1.15;font-weight:500;margin:.12em 0}.date{font-size:clamp(25px,4vw,42px);font-weight:700;letter-spacing:.15em;margin-top:44px}.place{font-size:12px;letter-spacing:.2em;margin-top:9px;opacity:.95}.countdown{display:grid;grid-template-columns:repeat(4,1fr);max-width:590px;margin:52px auto 38px;border-top:2px dashed rgba(255,255,255,.55);border-bottom:2px dashed rgba(255,255,255,.55);padding:22px 0}.unit:not(:last-child){border-right:1px solid rgba(255,255,255,.25)}.num{font-family:'Barlow Condensed';font-size:clamp(42px,7vw,72px);font-weight:700;line-height:.8}.label{font-size:9px;letter-spacing:.2em;margin-top:10px;opacity:.85}.scroll{font-family:'Barlow Condensed';font-size:14px;letter-spacing:.18em;display:inline-flex;gap:14px;align-items:center}.scroll i{width:38px;height:2px;background:#fff;display:block}
+.nav{position:sticky;top:0;z-index:20;background:rgba(11,27,67,.94);backdrop-filter:blur(8px);display:flex;justify-content:center;gap:22px;padding:12px 18px;overflow:auto;white-space:nowrap}.nav a{font:600 13px 'Barlow Condensed';letter-spacing:.12em;color:#fff;opacity:.82}.nav a:hover{opacity:1}
+.section{padding:100px 7vw;position:relative}.section.dark{background:var(--deep);color:#fff}.section.blue{background:linear-gradient(135deg,var(--blue),#287fb8);color:#fff}.inner{max-width:1180px;margin:auto}.kicker{font:700 16px 'Barlow Condensed';letter-spacing:.18em;margin-bottom:14px;color:var(--cyan)}.dark .kicker,.blue .kicker{color:#fff}.section h2{font:700 clamp(55px,8vw,108px)/.86 'Barlow Condensed';text-transform:uppercase;margin:0 0 25px;letter-spacing:-.015em}.lead{max-width:720px;font-size:18px;line-height:1.75}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.22);margin-top:50px}.time{padding:30px 22px;background:var(--deep)}.time strong{font:700 55px/1 'Barlow Condensed'}.time span{display:block;font:600 20px 'Barlow Condensed';text-transform:uppercase;margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}.card{background:#fff;border:1px solid rgba(20,49,112,.13);padding:28px;box-shadow:0 14px 35px rgba(16,43,105,.08)}.card h3{font:700 32px/1 'Barlow Condensed';text-transform:uppercase;margin:0 0 12px}.card p{line-height:1.65;margin:0}.number{font:700 16px 'Barlow Condensed';letter-spacing:.15em;color:var(--blue);margin-bottom:15px}.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:55px}.photo{min-height:460px;background:center/cover;border:7px solid #fff;box-shadow:0 12px 35px rgba(10,28,67,.12)}.photo.pareja{background-image:url('assets/foto-pareja.jpg')}.photo.mar{background-image:url('assets/foto-mar.jpg')}.photo.finca{background-image:url('assets/foto-portada.jpg')}.caption{font:600 15px 'Barlow Condensed';letter-spacing:.12em;text-transform:uppercase;margin-top:12px}
+.timeline{margin-top:55px;display:grid;gap:0}.event{display:grid;grid-template-columns:150px 1fr;gap:30px;border-top:1px dashed rgba(255,255,255,.35);padding:28px 0}.event:last-child{border-bottom:1px dashed rgba(255,255,255,.35)}.event-time{font:700 44px/1 'Barlow Condensed'}.event h3{font:700 30px/1 'Barlow Condensed';text-transform:uppercase;margin:0 0 8px}.event p{margin:0;line-height:1.6;opacity:.9}.event-img{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.event-img div{height:170px;background:center/cover;border:3px solid #fff}.event-img .one{background-image:url('assets/foto-portada.jpg')}.event-img .two{background-image:url('assets/foto-mar.jpg')}.event-img .three{background-image:url('assets/foto-pareja.jpg')}
+.mapbox{margin-top:50px;min-height:330px;background:linear-gradient(135deg,#35a4bd,#1d58a5);border:2px solid var(--navy);position:relative;overflow:hidden;display:grid;place-items:center;color:#fff}.mapbox:before{content:"O GROVE";font:800 18vw 'Barlow Condensed';opacity:.08;position:absolute}.map-pin{position:relative;z-index:2;text-align:center}.map-pin strong{font:700 48px/1 'Barlow Condensed';text-transform:uppercase}.btn{display:inline-block;margin-top:22px;border:1px solid currentColor;padding:12px 18px;font:600 14px 'Barlow Condensed';letter-spacing:.13em;text-transform:uppercase}
+.tracklist{margin-top:45px}.track{display:grid;grid-template-columns:60px 1fr 70px;gap:15px;align-items:center;border-top:1px solid rgba(255,255,255,.3);padding:17px 0;font:600 22px 'Barlow Condensed';text-transform:uppercase}.track em{font-style:normal;opacity:.65;text-align:right}.track small{font-size:12px;opacity:.7}
+.faq{margin-top:50px;display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq details{background:#fff;border:1px solid rgba(20,49,112,.12);padding:20px 22px}.faq summary{cursor:pointer;font:700 24px 'Barlow Condensed';text-transform:uppercase}.faq p{line-height:1.65;margin:16px 0 0}
+.note{font-size:13px;opacity:.7;margin-top:25px}.footer{padding:70px 7vw;background:var(--navy);color:#fff;display:flex;justify-content:space-between;gap:30px;align-items:end}.footer .names-mini{font:800 55px/ .75 'Barlow Condensed';text-transform:uppercase}.footer small{opacity:.65}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:800px){.hero:after{inset:11px}.names{font-size:clamp(76px,22vw,140px)}.countdown{max-width:95%}.nav{justify-content:flex-start}.section{padding:72px 24px}.grid4,.cards,.faq,.split{grid-template-columns:1fr 1fr}.cards .card:last-child{grid-column:1/-1}.split{gap:25px}.photo{min-height:320px}.event{grid-template-columns:90px 1fr;gap:18px}.event-time{font-size:35px}.event-img{grid-template-columns:1fr}.event-img div{height:190px}.footer{display:block}.footer small{display:block;margin-top:25px}}
+@media(max-width:520px){.grid4,.cards,.faq,.split{grid-template-columns:1fr}.cards .card:last-child{grid-column:auto}.hero-content{padding-top:45px}.countdown{gap:0}.num{font-size:40px}.label{font-size:8px}.section h2{font-size:60px}.track{grid-template-columns:35px 1fr 55px;font-size:18px}}
+</style>
+</head>
+<body>
+<header class="hero" id="inicio">
+ <div class="hero-grid"></div>
+ <div class="hero-content">
+  <div class="catalogue cond">Los grandes éxitos de la Doble N <span>©</span></div>
+  <div class="cover-mark"><span></span><b>14 / 08 / 27</b><span></span></div>
+  <h1 class="names cond"><span>Noe</span><span class="amp">&amp;</span><span>Néstor</span></h1>
+  <div class="date cond">14 · 08 · 2027</div>
+  <div class="place">Finca La Atlántida · O Grove · Pontevedra</div>
+  <div class="countdown">
+   <div class="unit"><div class="num" id="days">000</div><div class="label">Días</div></div>
+   <div class="unit"><div class="num" id="hours">00</div><div class="label">Horas</div></div>
+   <div class="unit"><div class="num" id="mins">00</div><div class="label">Minutos</div></div>
+   <div class="unit"><div class="num" id="secs">00</div><div class="label">Segundos</div></div>
+  </div>
+  <a class="scroll" href="#dia"><i></i>Entrar en el álbum<i></i></a>
+ </div>
+</header>
+<nav class="nav">
+ <a href="#dia">01 El día</a><a href="#historia">02 Historia</a><a href="#musica">03 Música</a><a href="#llegada">04 Llegada</a><a href="#alojamiento">05 Alojamiento</a><a href="#planes">06 Planes</a><a href="#preboda">07 Preboda</a><a href="#dresscode">08 Dress code</a><a href="#clima">09 Clima</a><a href="#faq">10 FAQ</a>
+</nav>
+
+<section class="section dark" id="dia"><div class="inner reveal">
+ <div class="kicker">01 / El gran día</div><h2>Una noche para escucharla entera.</h2>
+ <p class="lead">El 14 de agosto de 2027 nos juntamos para celebrar, brindar y bailar. Este es el orden de reproducción del gran día.</p>
+ <div class="grid4"><div class="time"><strong>18:00</strong><span>Ceremonia</span></div><div class="time"><strong>19:30</strong><span>Cóctel</span></div><div class="time"><strong>21:30</strong><span>Banquete</span></div><div class="time"><strong>23:00</strong><span>Fiesta</span></div></div>
+</div></section>
+
+<section class="section" id="historia"><div class="inner reveal">
+ <div class="kicker">02 / Noe + Néstor</div><h2>Una historia con varias caras A.</h2>
+ <div class="split"><div><p class="lead">Aquí irá vuestra historia: cómo empezó todo, viajes, momentos absurdos y todas esas pequeñas cosas que han terminado llevándonos hasta el 14 de agosto.</p><p class="note">Podemos convertir esta parte en una pequeña cronología con fotos y canciones asociadas a cada etapa.</p></div><div class="photo pareja"></div></div>
+</div></section>
+
+<section class="section blue" id="musica"><div class="inner reveal">
+ <div class="kicker">03 / Cara A · Cara B</div><h2>La banda sonora.</h2><p class="lead">El concepto musical de la invitación se convierte aquí en un hilo conductor. Podemos añadir Spotify, canciones de vuestra historia y, si queréis, una playlist colaborativa para los invitados.</p>
+ <div class="tracklist"><div class="track"><small>01</small><span>24/07</span><em>02:22</em></div><div class="track"><small>02</small><span>Bambino · Recycled J</span><em>02:36</em></div><div class="track"><small>03</small><span>¿Y si sí?</span><em>02:04</em></div><div class="track"><small>04</small><span>O Grove · Juancho Marqués</span><em>03:25</em></div></div>
+</div></section>
+
+<section class="section dark" id="llegada"><div class="inner reveal">
+ <div class="kicker">04 / Indicaciones de llegada</div><h2>Que nadie se pierda el primer tema.</h2>
+ <p class="lead">Aquí reuniremos todo lo necesario para llegar sin estrés: autobuses, horarios, puntos de recogida, taxis, parking y ubicación exacta de la finca.</p>
+ <div class="cards"><div class="card"><div class="number">01 / AUTOBÚS</div><h3>Ida y vuelta</h3><p>Horario y puntos de salida por definir. Dejaremos aquí el recorrido y la hora de regreso después de la fiesta.</p></div><div class="card"><div class="number">02 / COCHE</div><h3>Aparcamiento</h3><p>Indicaremos dónde aparcar, accesos recomendados y cualquier restricción especial del recinto.</p></div><div class="card"><div class="number">03 / MAPA</div><h3>Finca La Atlántida</h3><p>O Grove · Pontevedra. Añadiremos enlace directo a Google Maps y coordenadas cuando cerremos la información.</p></div></div>
+ <div class="mapbox"><div class="map-pin"><strong>Finca La Atlántida</strong><div>O Grove · Pontevedra</div><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Finca+La+Atlantida+O+Grove" target="_blank">Abrir en Maps ↗</a></div></div>
+</div></section>
+
+<section class="section" id="alojamiento"><div class="inner reveal">
+ <div class="kicker">05 / Dormir cerca</div><h2>Después de la fiesta, a descansar.</h2>
+ <p class="lead">Crearemos una selección de alojamientos por zonas y presupuesto, priorizando opciones prácticas para volver de la boda y disfrutar del fin de semana.</p>
+ <div class="cards"><div class="card"><div class="number">ZONA 01</div><h3>O Grove</h3><p>La opción más cómoda para estar cerca del evento y tener restaurantes y servicios a mano.</p></div><div class="card"><div class="number">ZONA 02</div><h3>A Lanzada</h3><p>Buena alternativa si queréis combinar boda, playa y un fin de semana de verano.</p></div><div class="card"><div class="number">ZONA 03</div><h3>Sanxenxo</h3><p>Más ambiente y más oferta de alojamiento; después habrá que coordinar el transporte.</p></div></div>
+</div></section>
+
+<section class="section blue" id="planes"><div class="inner reveal">
+ <div class="kicker">06 / O Grove &amp; Rías Baixas</div><h2>Ya que venís, quedaos un poco.</h2>
+ <div class="split"><div class="photo mar"></div><div><p class="lead">La boda puede ser el centro del viaje, pero alrededor hay muchísimo que hacer.</p><div class="cards" style="grid-template-columns:1fr 1fr;margin-top:30px"><div class="card"><h3>La Lanzada</h3><p>Playa, paseo y atardecer.</p></div><div class="card"><h3>A Toxa</h3><p>Paseo, isla y balneario.</p></div><div class="card"><h3>Ons</h3><p>Excursión en barco y senderos.</p></div><div class="card"><h3>Albariño</h3><p>Visitar bodegas de la zona.</p></div></div></div></div>
+</div></section>
+
+<section class="section dark" id="preboda"><div class="inner reveal">
+ <div class="kicker">07 / La previa</div><h2>Antes del gran día.</h2>
+ <p class="lead">Aquí irá toda la información de la preboda: lugar, hora, dress code si lo hubiera, cómo llegar y cualquier detalle que necesitéis saber.</p>
+ <div class="cards"><div class="card"><div class="number">FECHA</div><h3>Por confirmar</h3><p>Publicaremos aquí el día y la hora definitiva.</p></div><div class="card"><div class="number">LUGAR</div><h3>Por confirmar</h3><p>Dirección y enlace al mapa.</p></div><div class="card"><div class="number">PLAN</div><h3>Por confirmar</h3><p>La previa también tendrá su propia banda sonora.</p></div></div>
+</div></section>
+
+<section class="section" id="dresscode"><div class="inner reveal">
+ <div class="kicker">08 / Dress code</div><h2>Vestiros para el verano.</h2>
+ <p class="lead">Propuesta inicial: <strong>elegante de verano</strong>. Queremos que vengáis guapos, cómodos y preparados para una tarde-noche de agosto en las Rías Baixas.</p>
+ <div class="cards"><div class="card"><h3>Ellas</h3><p>Vestido, conjunto o mono de fiesta. Tejidos ligeros y calzado cómodo recomendado.</p></div><div class="card"><h3>Ellos</h3><p>Traje o conjunto de invitado de verano. Se puede prescindir de corbata si queréis un punto más relajado.</p></div><div class="card"><h3>Importante</h3><p>El código definitivo lo cerraremos más adelante. Aquí también podremos indicar colores que queramos evitar.</p></div></div>
+</div></section>
+
+<section class="section blue" id="clima"><div class="inner reveal">
+ <div class="kicker">09 / Meteorología</div><h2>Agosto en las Rías Baixas.</h2>
+ <div class="split"><div><p class="lead">En O Grove, agosto suele ser uno de los meses más cálidos y secos del año, pero la cercanía del Atlántico hace recomendable llevar una capa ligera para la noche.</p><p class="note">La previsión meteorológica concreta no tendrá sentido hasta los días previos. Actualizaremos esta sección con la previsión real cuando se acerque la fecha.</p></div><div class="photo finca"></div></div>
+</div></section>
+
+<section class="section" id="faq"><div class="inner reveal">
+ <div class="kicker">10 / Preguntas frecuentes</div><h2>Todo lo que necesitas saber.</h2>
+ <div class="faq">
+  <details><summary>¿Hay que confirmar asistencia?</summary><p>Sí. Añadiremos aquí el formulario y la fecha límite para confirmar.</p></details>
+  <details><summary>¿Pueden venir niños?</summary><p>La respuesta definitiva la indicaremos aquí para evitar dudas. También podemos diferenciar ceremonia, banquete y fiesta.</p></details>
+  <details><summary>¿Habrá autobús?</summary><p>Añadiremos horarios, puntos de recogida y regreso en cuanto estén cerrados.</p></details>
+  <details><summary>¿Dónde puedo alojarme?</summary><p>Consulta el apartado de alojamiento para ver las zonas y recomendaciones.</p></details>
+  <details><summary>¿Qué pasa si llueve?</summary><p>La organización tendrá plan alternativo. Lo explicaremos aquí cuando tengamos la información definitiva.</p></details>
+  <details><summary>¿Puedo llevar acompañante?</summary><p>La invitación y el formulario indicarán el número de plazas asignadas.</p></details>
+  <details><summary>¿Qué ropa llevo?</summary><p>Consulta el apartado Dress code. La idea es elegante de verano.</p></details>
+  <details><summary>¿Habrá opciones vegetarianas?</summary><p>El formulario de asistencia recogerá alergias, intolerancias y necesidades alimentarias.</p></details>
+ </div>
+</div></section>
+
+<section class="section dark" id="rsvp"><div class="inner reveal"><div class="kicker">11 / Confirmación</div><h2>¿Estás en la lista?</h2><p class="lead">El formulario definitivo recogerá asistencia, acompañantes, transporte, alojamiento, alimentación y cualquier otra información necesaria.</p><a class="btn" href="#faq">Ir a preguntas frecuentes</a></div></section>
+<footer class="footer"><div class="names-mini">Noe &amp; Néstor</div><small>14 · 08 · 2027 · Finca La Atlántida · O Grove</small></footer>
+<script>
+const target=new Date('2027-08-14T18:00:00+02:00').getTime();
+function tick(){let d=Math.max(0,target-Date.now()),s=Math.floor(d/1000),days=Math.floor(s/86400);s%=86400;let h=Math.floor(s/3600);s%=3600;let m=Math.floor(s/60);s%=60;document.querySelector('#days').textContent=String(days).padStart(3,'0');document.querySelector('#hours').textContent=String(h).padStart(2,'0');document.querySelector('#mins').textContent=String(m).padStart(2,'0');document.querySelector('#secs').textContent=String(s).padStart(2,'0')}
+tick();setInterval(tick,1000);
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('visible')),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+</body></html>
